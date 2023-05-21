@@ -1,0 +1,488 @@
+*{
+    opacity: 100%;
+}
+
+@font-face {
+    font-family: 'sohne';
+    src: url('../font/Sohne.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 20px;
+    object-fit: cover;
+}
+
+span{
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+
+.mainTop {
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 75px;
+    top: 0;
+    position: fixed;
+    box-shadow: 0px 3px 15px #00000024;
+}
+.topbar {
+    width: 90%;
+    z-index: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar>a img {
+    width: 165px;
+    object-fit: cover;
+    height: fit-content;
+}
+.leftTopBarBox{
+    display: flex;
+    align-items: center;
+}
+.leftTopBarBox>* {
+    margin: 0px 5px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.resume {
+    border: 1px black solid;
+    border-radius: 50px;
+    padding: 6px 10px;
+}
+a{text-decoration: none;
+    color: black;
+}
+.profile {
+    background-color: #0077d6;
+    border-radius: 100%;
+    padding: 10px;
+    aspect-ratio: 1;
+    width: 16px;
+    text-align: center;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.usableArea {
+    width: 100%;
+    margin: 75px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1336px;
+}
+main {
+    border-right: rgba(0, 0, 0, 0.108) 1px solid;
+    display: flex;
+    flex-direction: column;
+    max-width: 1330px;
+    align-items: flex-end;
+    width: 60%;
+}
+main>div {
+    width: 90%;
+    max-width: 728px;
+    margin-right: 5%;
+    margin-left: 5%;
+    overflow: hidden;
+    position: relative;
+}
+.topMain {
+    height: 80px;
+    border-bottom: rgba(0, 0, 0, 0.108) 1px solid;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: end;
+}
+
+.topMain>span {
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    padding: 10px 10px;
+    font-weight: bold;
+    color: rgba(117, 117, 117, 1);
+    border-bottom: 1px solid transparent;
+    
+}
+.topMain>span{
+color: rgba(117, 117, 117, 1);
+border-bottom: 1px solid transparent;
+transition: 0.2s ease;
+text-decoration: none;
+}
+.topMain>.active {
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+
+
+.minitextarea {
+    display: flex;
+    align-items: center;
+}
+.minitextarea span {
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+.minitextarea img{
+    border-radius: 100%;
+}
+
+.cnt {
+    height: 2px;
+    margin-top: -1.5em;
+}
+
+.textbox>div{
+    margin-top: 10px;
+}
+.singleArticleTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.singleArticleDescription {
+    font-size: 1rem;
+    color: black;
+    width: 100%;
+}
+.articleDescription {
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: normal;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    line-height: 24px;
+    overflow: hidden;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+.bottomTextArea {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 0.8rem;
+    color: rgba(117, 117, 117, 1);
+    margin-top: 15px;
+}
+
+
+.singleArticle {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.imageBox {
+    width: 190px;
+    object-fit: cover;
+    aspect-ratio: 15/10;
+}
+.textbox {
+    width: 70%;
+    margin-right: 20px;
+}
+a>.topic {
+    background-color: rgba(117, 117, 117, 0.1);
+    padding: 4px 8px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}
+.first>* {
+    margin-right: 2px;
+}
+
+.singleArticleGroup {
+    margin: 30px 0px;
+    max-width: 725px;
+}
+
+.minitextarea{
+    color: rgba(117, 117, 117, 1);
+}
+.minitextarea a{
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+}
+
+.discovery {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    margin: 0px 2.5%;
+}
+
+.imgBox img:nth-of-type(1){
+        width: 43px;
+}
+.imgBox img:nth-of-type(2){
+    width: 13.5px;
+}
+.imgBox img:nth-of-type(3){
+    width: 22px;
+}
+.imgBox {
+    display: flex;
+    justify-content: space-evenly;
+    width: 28%;
+}
+.imgBox img {
+    height: auto;
+    object-fit: contain;
+}
+.twitterbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: rgba(0, 0, 0, 0.108) 1px solid;
+}
+.discovery>div>div {
+    padding: 40px 0px;
+}
+.twitterbox>div {
+    padding: 15px 0px;
+}
+.twitterbox span:nth-of-type(1) {
+    width: 270px;
+    text-align: center;
+}
+.twitterbox>a {
+    border: solid 1px rgba(117, 117, 117, 1);
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin: 20px 0px;
+    justify-content: center;
+    
+}
+.twitterbox a{
+    color:  rgba(117, 117, 117, 1)
+}
+.twitterbox>span>a:visited{
+    color:  rgb(38, 38, 38)
+}
+.twitterbox>span>a:visited:hover{
+    color:  rgba(117, 117, 117, 1)
+}
+.discovery .int {
+    font-weight: bold;
+}
+.reccomendedList a {
+    background-color: rgba(117, 117, 117, 0.2);
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    margin: 4px;
+    text-decoration: none;
+    color: black;
+}
+.reccomendedTopics{
+    width: 100%;
+}
+
+.reccomendedList {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+}
+.discovery>div>.whofollowbox{
+    padding-top:0;
+}
+.followbox {
+    width: 100%;
+    display: block;
+}
+.singlefollow {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    flex-flow: row wrap;
+}
+.singlefollow>div {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-left: 15px;
+    width: 60%;
+}
+.singlefollow>div :nth-child(1) {
+    font-weight: bold;
+}
+.singlefollow>div :nth-child(2) {
+    color: rgba(117, 117, 117, 1);
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+}
+.singlefollow img {
+    width: 35px;
+    border-radius: 100%;
+    align-self: flex-start;
+}
+.singlefollow>:last-child {
+    right: 0;
+    position: absolute;
+    border: 1px black solid;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+.singlefollow {
+    margin: 25px 0px;
+}
+@media (max-width: 950px) {
+    .discovery{
+        display: none;
+    }
+    main{
+        width: 80%;
+    }
+    .bottomTextArea {
+        width: 100%;}
+}
+.recentsavedlist {
+    margin-top: 20px;
+    height: 270px;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+.discovery .singleArticleTitle{
+    font-size: 1rem;
+}
+.discovery .bottomTextArea {
+    margin: 5px 0px;
+}
+.seeall {
+    text-decoration: none;
+    color: #00c829;
+    font-size: 0.8rem;
+}
+.seeall:visited {
+    text-decoration: none;
+    color: #a100aa;
+}
+.discovery .bottom>ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0;
+    padding-inline-start: 0;
+}
+.discovery .bottom>ul>li a {
+    font-family: 'sohne';
+    font-size: 0.8rem;
+    color: rgba(117, 117, 117, 1);
+    margin: 10px 30px 0px 0px;
+    text-decoration: none;
+    display: block;
+}
+.discovery .bottom>ul>li a:hover {
+
+    color: rgb(24, 24, 24);
+
+}
+.contentCol {
+    position: sticky;
+}
+
+.recentsavedlist .textbox {
+    width: 100%;
+}
+.boh{
+    border-bottom: initial;
+}
+
+.col1 {
+    display: flex;
+    overflow: hidden;
+    width: 200%;
+    left: 0%;
+    top: 0;
+    position: relative;
+    transition: left 0.3s ease;
+}
+.arg{
+    cursor: pointer;
+}
+.twitterbox>a{
+    transition: background-color 0.3s ease;
+}
+.twitterbox>a:hover{
+    background-color:rgba(117, 117, 117, 0.1);
+}
+.reccomendedList a{
+    background-color: rgba(117, 117, 117, 0.2);
+    transition: background-color 0.2s ease;
+
+}
+.reccomendedList a:hover{
+    background-color: rgba(117, 117, 117, 0.1)
+}
+.singlefollow>:last-child, .resume{
+    background-color: rgba(117, 117, 117, 0.0);
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+.singlefollow>:last-child:hover, .resume:hover{
+    background-color: rgba(117, 117, 117, 0.2)
+}
+
+.profile{
+    transition: background-color 0.2s ease;
+}
+.profile:hover{
+    background-color: rgba(33, 33, 33, 0.5)
+}
+.leftTopBarBox img{
+    opacity: 100%;
+    transition: opacity 0.2s ease;
+}
+.leftTopBarBox img:hover{
+    opacity: 50%;
+}
+
+.singlefollow>:last-child{
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 10px;
+}
+.topMain {
+    position: sticky;
+    top: 40px;
+    background-color: white;
+    z-index: 1;
+}
+.contentCol{
+    transition: top 0.6s ease;
+}
+.discovery>div>.recentSave{
+    padding-top: 0px
+}
